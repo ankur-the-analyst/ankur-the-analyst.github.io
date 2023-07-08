@@ -1,0 +1,583 @@
+html {
+    font-size: 10px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #0f0d30;
+}
+
+hr {
+    border: 1px dashed rgb(161, 161, 161);
+    margin: 1rem 2rem;
+}
+
+/* NAVBAR START */
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: whitesmoke;
+    letter-spacing: 0.4rem;
+    padding: 10px;
+    font-family: 'Alegreya';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #242343;
+
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    height: 17px;
+    width: 25px;
+}
+
+.menu-icon {
+    height: 17px;
+    width: 25px;
+    background-color: #242343;
+    border: none;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.menu-item:hover {
+    color: #c0bfbf;
+}
+
+/* NAVBAR END  */
+
+
+
+/* INTRODUCTION START */
+
+.introduction {
+    margin: 10rem auto 8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.intro-1 {
+    padding: 0.5rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.intro-2 h3 {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #f7da6f;
+}
+
+/* VECTOR IMAGES  */
+
+#vector-img-1 {
+    height: 25rem;
+    margin: 0 0 -7.9rem;
+}
+
+#vector-img-2 {
+    height: 21rem;
+    margin: 0 0 -7.2rem;
+}
+
+/* INTRODUCTION END  */
+
+
+
+/* SKILLS START */
+
+.slide {
+
+    width: 55px;
+    margin: 30px 40px;
+    display: flex;
+    align-items: center;
+    filter: invert(100%);
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    /* margin */
+    margin: 0 20px;
+}
+
+.slide-effect {
+    
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+
+        transform: translate(-100%);
+    }
+
+}
+
+/* SKILLS END  */
+
+
+
+/* ABOUT SECTION START */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.about p {
+    padding: 3rem;
+    text-align: start;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+/* ABOUT SECTION END  */
+
+
+
+/* TAG  */
+.tag {
+    text-align: center;
+    font-weight: 600;
+    margin: 6rem auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #f7da6f;
+    width: 50rem;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+
+
+/* PROJECTS START */
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 1rem 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.project {
+    display: inline-grid;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 42rem;
+    flex-wrap: wrap;
+    background-color: #242343;
+}
+
+.project p {
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+.project .last{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.project img {
+    width: 42rem;
+    height: 28rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.project-more {
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.project-more a {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    margin: 2rem 0 4rem;
+}
+
+.project-more a:hover {
+    color: white;
+}
+
+#right-arrow {
+    display: flex;
+    align-items: center;
+}
+
+#right-arrow img {
+    margin: 0 1rem;
+    width: 1.8rem;
+    filter: invert(85%) sepia(35%) saturate(625%) hue-rotate(351deg) brightness(101%) contrast(94%);
+}
+
+/* PROJECT END  */
+
+
+
+/* MISC  */
+.misc {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 3rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+/* FOOTER START  */
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 10rem;
+}
+
+.contact-item img {
+    width: 5rem;
+    height: 5rem;
+    filter: invert(60%);
+}
+
+.contact-item:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #242343;
+    color: white;
+}
+
+/* FOTTER END  */
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* UNDER 800px DEVICES */
+
+@media (max-width:800px) {
+
+    html {
+        font-size: 7px;
+    }
+
+
+
+    /* NAVBAR  */
+
+    .menu a{
+        font-size: 20px;
+        font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .menu {
+        position: absolute;
+        top: 81px;
+        right: 0;
+        background-color: #352660;
+        font-size: 2.5rem;
+        height:30vh;
+        width: 90vw;
+        margin-right: 5%;
+        border-radius: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .nav-open .menu {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-item {
+        color: #dbdbdb;
+        font-size: 2rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+
+    /* INRODUCTION  */
+
+    .introduction {
+        font-size: 3rem;
+    }
+
+    .intro-1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro-1 {
+        font-size: 2rem;
+    }
+
+    .intro-2 {
+        width: 40vw;
+        font-size: 2.5rem;
+    }
+
+    .intro-2 h3 {
+        font-size: 2.1rem;
+    }
+
+    #vector-img-1 {
+        height: 22rem;
+        margin: 0 0 -7.1rem;
+    }
+
+    #vector-img-2 {
+        height: 20rem;
+        margin: 0 0 -5.5rem;
+    }
+
+
+
+    /* PORJECT  */
+
+    .project-container {
+        margin: auto;
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .project img {
+        width: 60vw;
+        height: 40vw;
+    }
+
+
+
+    /* ABOUT  */
+
+    .about {
+        margin: 5rem 2rem;
+    }
+
+
+    .tag{
+        width: 60vw;
+    }
+
+
+    /* MISC  */
+
+    .misc {
+        font-size: 2rem;
+    }
+
+
+    /* CONTACTS  */
+
+    .contacts {
+        margin: 5rem;
+    }
+}
+
+
+
+/* UNDER 500px DEVICES  */
+
+@media(max-width:500px) {
+
+    html {
+        font-size: 7px;
+    }
+
+
+    /* INTRODUCTION  */
+
+    .introduction {
+        font-size: 2.8rem;
+        margin: 9rem auto;
+    }
+
+    .intro-1 {
+        margin: auto;
+        width: 70vw;
+        display: grid;
+    }
+
+    .intro-1 div {
+        width: 70vw;
+    }
+
+    .intro-2 h3 {
+        width: 69vw;
+        text-align: center;
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    #vector-img-1 {
+        display: none;
+    }
+
+    #vector-img-2 {
+        justify-content: center;
+        display: flex;
+        height: 28rem;
+        margin: 0 auto -7rem;
+    }
+
+    /* SKILLS */
+
+    .slide{
+        width: 40px;
+        margin: 20px 30px;
+    }
+
+
+
+    /* ABOUT  */
+
+    .about p {
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        font-size: 2rem;
+        color: white;
+        width: auto;
+    }
+
+
+    /* PPROJECT */
+
+    .project-container{
+        display: grid;
+        width: 80vw;
+    }
+
+    .projects h1 {
+        font-size: 0.9rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .project img {
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .project {
+        width: 21rem;
+    }
+
+    .project p{
+        font-size: 3vw;
+    }
+
+
+    /* CONTACT  */
+
+    .contact-item img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+
+/* OVER 1400px DEVICES */
+
+@media(min-width:1500px) {
+    html {
+        font-size: 15px;
+    }
+
+    .project {
+        width: 37rem;
+    }
+
+    .project img {
+        width: 37rem;
+        height: 25rem;
+    }
+
+}
