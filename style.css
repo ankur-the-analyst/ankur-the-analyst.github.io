@@ -201,10 +201,10 @@ hr {
     width: 50rem;
     padding: 3rem;
     border-radius: 20px;
-    border: 1px solid #f7da6f;
+    border: 1px solid #f7da6f ;
     border-bottom: transparent;
     border-top: transparent;
-    color: white;
+    color: #ffffff8a ;
 }
 
 
@@ -286,7 +286,7 @@ hr {
     justify-content: center;
     margin: 5rem 3rem;
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: #f7da6f;
     text-align: center;
 }
 
